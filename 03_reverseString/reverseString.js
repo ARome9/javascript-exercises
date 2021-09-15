@@ -1,13 +1,9 @@
 const reverseString = function(str) {
-  var strArr = str.split('');
-  var reversed = '';
-
-  for (let i = strArr.length - 1; i >= 0; i--) {
-    let currentWord = strArr[i];
-    console.log('Current Letter: ', currentWord);
-    reversed += currentWord;
-  }
-  return reversed;
+  let strArr = str.split('');
+  let reversedArr = strArr.reverse();
+  let joined = reversedArr.join('');
+  return joined;
 };
+reverseString('hi');
 // Do not edit below this line
 module.exports = reverseString;
